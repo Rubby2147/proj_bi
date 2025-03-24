@@ -21,25 +21,25 @@ jwt = JWTManager(app)
 @app.route('/usuarios', methods=['GET'])
 def get_usuarios():
     cur = mysql.connection.cursor()
-    cur.execute("SELECT id, nome, end, cidade, email, fone FROM usuarios")
+    cur.execute("SELECT id, nome, endereco, cidade, email, fone FROM usuarios")
     users = cur.fetchall()
     cur.close()
     
-    return jsonify([{"id": u[0], "nome": u[1], "end": u[2], "cidade": u[3], "email": u[4], "fone": u[5],} for u in users])
+    return jsonify([{"id": u[0], "nome": u[1], "endereco": u[2], "cidade": u[3], "email": u[4], "fone": u[5],} for u in users])
 
 # Rota para cadastro de usuários
 @app.route('/registro', methods=['POST'])
 def register():
     data = request.get_json()
     nome = data['nome']
-    end = data['end']
+    endereco = data['endereco']
     cidade = data['cidade']
-    fone = data['fone']
     email = data['email']
+    fone = data['fone']
     #senha = bcrypt.hashpw(data['senha'].encode('utf-8'), bcrypt.gensalt())
 
     cur = mysql.connection.cursor()
-    cur.execute("INSERT INTO usuarios (nome, end, cidade, fone, email) VALUES (%s, %s, %s, %s, %s)", (nome, end, cidade, fone, email))
+    cur.execute("INSERT INTO cliente (nome, endereco, cidade, fone, email) VALUES (%s, %s, %s, %s, %s)", (nome, endereco, cidade, email, fone))
     mysql.connection.commit()
     cur.close()
 

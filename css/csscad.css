@@ -14,13 +14,15 @@ body {
  
  
 input {
-    display: block;
-    border-radius: 10px;
+    display: block center;
+    border-radius: 7px;
     padding: 5px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     width: 90%;
     background-color: #ffffff;
+    border-width: 0.5px;
+    margin: 7px;
 }
  
 button{
@@ -38,7 +40,7 @@ button:hover{
 
 .registerSection{
     background-color: rgb(170, 1, 1, 0.5);
-    padding: 100px;
+    padding: 30px 70px;
     border-radius: 10px;
 }
 
@@ -46,4 +48,5 @@ h2{
     color: aliceblue;
     background-color: rgb(0, 0, 0, 0.5);
     border-radius: 10px;
+    margin: 7px;
 }
