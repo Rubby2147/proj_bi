@@ -1,0 +1,62 @@
+*{
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("/img/bandeira.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conteiner {
+    text-align: center;
+    padding: 20px 60px;
+    border-radius: 10px;
+}
+
+h1{
+    color: #fff;
+    background-color: rgb(0, 0,0,0.4);
+    padding: 5px 50px;
+    border-radius: 7.5px;
+}
+
+h2{
+    color: #fff;
+    margin-bottom: 3px;
+    padding: 10px 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn:hover{
+    background-color: rgb(0, 102, 255);
+}
+
+button{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+button:hover{
+    background-color: rgb(0, 102, 255);
+}
