@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 3px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ body{
 .conteiner {
     text-align: center;
     background-color: rgb(170, 1, 1, 0.5);
-    padding: 40px 90px;
+    padding: 20px 60px;
     border-radius: 10px;
 }
 
@@ -28,7 +28,7 @@ h1{
 
 h2{
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     padding: 10px 20px;
 }
 .btn{
