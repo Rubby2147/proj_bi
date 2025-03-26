@@ -14,7 +14,6 @@ body {
 .conteiner {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(170, 1, 1, 0.5);
     padding: 40px 70px;
     border-radius: 10px;
 }
@@ -48,13 +47,13 @@ input{
 
 h1{
     color: #ffffff;
-    background-color: rgb(12, 12, 12,0.5);
+    background-color: rgb(12, 12, 12,0.8);
     padding: 5px ;
     border-radius: 10px ;
 }
 h2{
     color: #ffffff;
-    background-color: rgb(12, 12, 12,0.5);
+    background-color: rgb(12, 12, 12,0.8);
     border-radius: 10px;
     padding: 5px;
 }
